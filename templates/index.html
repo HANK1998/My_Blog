@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+<body>
+<h3>我的博客列表：</h3>
+    {% for artical in articals %}
+        <a href="../artical/{{ artical.id }}">{{ artical.title }}</a>
+        <br>
+    {% endfor %}
+    <br>
+    <br>
+    <a href="artical_edit_page.html">写博客</a>
+</body>
+</html>
